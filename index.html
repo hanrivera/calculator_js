@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="calcu-container">
+        <!-- display -->
+        <div class="display">
+            <p id="compute" class="dispComputation">test</p>
+            <p id="result" class="dispResult">test</p>
+        </div>
+        <!-- keys -->
+        <div class="keygroups">
+            <div class="keyrows">
+                <button id="ac">AC</button>
+                <button id="asterisk">*</button>
+                <button id="slash">/</button>
+                <!-- <button><i data-feather="arrow-left"></i></button> -->
+                <button id="backspace" class="backspace">
+                    <img src="./assets/arrow-left.svg" alt="backspace">
+                </button>
+            </div>
+            <div class="keyrows">
+                <button id="one">1</button>
+                <button id="two">2</button>
+                <button id="three">3</button>
+                <button id="plus">+</button>
+            </div>
+            <div class="keyrows">
+                <button id="four">4</button>
+                <button id="five">5</button>
+                <button id="six">6</button>
+                <button id="minus">-</button>
+            </div>
+            <div class="keyrows">
+                <button id="seven">7</button>
+                <button id="eight">8</button>
+                <button id="nine">9</button>
+                <button id="equal" class="equal">=</button>
+            </div>
+            <div class="keyrows">
+                <button id="percent ">%</button>
+                <button id="zero">0</button>
+                <button id="point">.</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        feather.replace()
+    </script>
+    <script src="./script.js">
+    </script>
+</body>
+</html>

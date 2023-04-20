@@ -1,0 +1,112 @@
+:root{
+    --default-color: #303234;
+    --default-border: 1px solid #303234;
+    --box-shadow: 1px 1px 0px #303234;
+
+    --container-background: #f2f2f2;
+    --obj-background: #fbfbfb;
+
+    --default-font: 500 16px 'IBM Plex Mono', sans-serif;
+
+    --computation: 400 12px 'IBM Plex Mono', sans-serif;
+
+    --container-border: 2px solid #303234;
+    --container-box-shadow: 2px 2px 0px #303234;
+
+    --text-result: #145FB8;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* outline: 1px solid gray; */
+}
+
+
+*:focus{
+    outline: none;
+    box-shadow: var(--box-shadow);
+}
+
+body{
+    font: var(--default-font);
+}
+
+.calcu-container{
+    height: 304px;
+    max-width: 204px;
+    padding: 16px;
+
+    background-color: var(--container-background);
+    border: var(--container-border);
+    box-shadow: var(--container-box-shadow);
+
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.display{
+    height: 48px;
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 8px;
+
+    border: var(--default-border);
+    background-color: var(--obj-background);
+    box-shadow: var(--box-shadow);
+
+    text-align: right;
+}
+
+.dispComputation{
+    font: var(--computation);
+    margin-bottom: 4px;
+}
+
+.dispResult{
+    font: var(--default-font);
+    color: var(--text-result);
+}
+
+.keyrows{
+    display: flex;
+    gap: 4px;
+}
+
+.keyrows:last-child{
+    display: flex;
+    gap: 3px;
+
+    position: absolute;
+    top: 250px;
+}
+
+button{
+    height: 40px;
+    width: 40px;
+
+    margin-bottom: 4px;
+    font: var(--default-font);
+    border: var(--default-border);
+    background-color: var(--obj-background);
+    box-shadow: var(--box-shadow);
+}
+
+button:active{
+    background: rgba(48, 50, 52, 0.1);
+}
+
+button.backspace img{
+    height: 12px;
+    width: 12px;
+}
+
+button.equal{
+    height: 84px;
+}
